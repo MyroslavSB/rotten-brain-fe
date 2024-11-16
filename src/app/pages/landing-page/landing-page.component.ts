@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Button} from "primeng/button";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-landing-page',
@@ -12,4 +13,12 @@ import {Button} from "primeng/button";
 })
 export class LandingPageComponent {
 
+  constructor(
+    private router: Router,
+  ) {
+  }
+
+  public goTo(route: string): void {
+    this.router.navigateByUrl(route);
+  }
 }

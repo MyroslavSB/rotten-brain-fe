@@ -2,9 +2,9 @@
   <div class="landing-page__main">
     <div class="landing-page__main-buttons">
 
-      <p-button [label]="'Start battle'"></p-button>
+      <p-button [label]="'Start battle'" (onClick)="goTo('battle')"></p-button>
 
-      <p-button [label]="'Game rules'"></p-button>
+      <p-button [label]="'Game rules'" (onClick)="goTo('game-rules')"></p-button>
     </div>
 
   </div>
